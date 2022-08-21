@@ -1,6 +1,7 @@
 import './App.css';
 import {Routes, Route} from "react-router-dom"
 import "bootstrap/dist/css/bootstrap.min.css"
+import React, { Component }  from 'react';
 
 import Main from './pages/Main';
 import DetailProduct from './pages/DetailProduct';
