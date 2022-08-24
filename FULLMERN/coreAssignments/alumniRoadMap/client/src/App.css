@@ -81,6 +81,7 @@ label {
 .dashb-bcolor {
   background-color: #121212;
   color: #e2e2e2;
+  height: 2000px;
   /* display: flex; */
   align-content: space-between;
   
@@ -101,6 +102,7 @@ img {
 .leftContent{
   background-color: #2a2a2a;
   width: 500px;
+  height: auto;
   /* height: 450px; */
   border-radius: .5rem;
   margin-left: 7rem;
