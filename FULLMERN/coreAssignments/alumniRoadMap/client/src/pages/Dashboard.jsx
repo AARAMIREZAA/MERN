@@ -29,9 +29,9 @@ const Dashboard = () => {
                 <div className='leftContent'>
                     <h1>Completed Courses</h1>
                     <ul className='leftContent-flex' style={{ listStyleType: "none" }}>
-                        <li> <img src="./icon1.png" alt="" />Web Fundamentals</li>
-                        <li> <img src="./icon1.png" alt="" /> MEAN</li>
-                        <li> <img src="./icon1.png" alt="" /> PYTHON</li>
+                        <li> <img src="./icon1.png" alt="web icon" />Web Fundamentals</li>
+                        <li> <img src="./icon1.png" alt="web icon" /> MEAN</li>
+                        <li> <img src="./icon1.png" alt="web icon" /> PYTHON</li>
                     </ul>
                     <ul className='leftContent-flex' style={{ listStyleType: "none" }}>
                         <li> <img src="./icon1.png" alt="" /> RAILS</li>
