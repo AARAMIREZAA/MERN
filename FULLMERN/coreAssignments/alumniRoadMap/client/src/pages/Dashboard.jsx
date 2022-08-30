@@ -34,14 +34,14 @@ const Dashboard = () => {
                         <li> <img src="./icon1.png" alt="web icon" /> PYTHON</li>
                     </ul>
                     <ul className='leftContent-flex' style={{ listStyleType: "none" }}>
-                        <li> <img src="./icon1.png" alt="" /> RAILS</li>
-                        <li> <img src="./icon1.png" alt="" /> IOS</li>
-                        <li> <img src="./icon1.png" alt="" /> C#/.NET</li>
+                        <li> <img src="./icon1.png" alt="web icon" /> RAILS</li>
+                        <li> <img src="./icon1.png" alt="web icon" /> IOS</li>
+                        <li> <img src="./icon1.png" alt="web icon" /> C#/.NET</li>
                     </ul>
                     <ul className='leftContent-flex' style={{ listStyleType: "none" }}>
-                        <li> <img src="./icon1.png" alt="" /> JAVA</li>
-                        <li> <img src="./icon1.png" alt="" /> MERN</li>
-                        <li> <img src="./icon1.png" alt="" /> PROGRAMMING BASICS</li>
+                        <li> <img src="./icon1.png" alt="web icon" /> JAVA</li>
+                        <li> <img src="./icon1.png" alt="web icon" /> MERN</li>
+                        <li> <img src="./icon1.png" alt="web icon" /> PROGRAMMING BASICS</li>
                     </ul>
                     <div className='leftContent-flex'>
                         <button className='button'>DATA SCIENCE</button>
