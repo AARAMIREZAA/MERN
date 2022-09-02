@@ -58,7 +58,9 @@ const Dashboard = () => {
                         interactivity, uses CSS to create an attractive design and monitors the site's effectiveness. Web
                         developers who attend a coding bootcamp learn the basics and advanced techniques for HTML, CSS,
                         UI/UX design and accessibility.</h2>
+                    <h2></h2>
                     <h2 className="text2">National Average Salary: $78,409 </h2>
+                    <h2></h2>
                     <h2 className="text2">Lowest salary job found in Los Angeles: $43,680 </h2>
                 </div>
 
