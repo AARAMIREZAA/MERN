@@ -63,6 +63,9 @@ const Dashboard = () => {
                     <h2></h2>
                     <h2 className="text2">Lowest salary job found in Los Angeles: $43,680 </h2>
                 </div>
+                <table>
+                    
+                </table>
 
 
 
