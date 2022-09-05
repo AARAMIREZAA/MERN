@@ -1,6 +1,26 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import axios from 'axios'
+import { Link } from "react-router-dom"
 
 const Dashboard = () => {
+    const [recipes, setRecipes] = useState([])
+    const [submitted, setSubmitted] = useState(false)
+
+    const refresh = () => {
+        setSubmitted(!submitted)
+    }
+
+    useEffect(() => {
+        axios.get("http://localhost:8000/api/recipes")
+            .then(response => setRecipes(response.data))
+            .catch()
+    }, [submitted])
+
+    const deleteHandler = (recipe_id) => {
+        axios.delete("http://localhost:8000/api/recipes/" + recipe_id)
+            .then(response => refresh())
+            .catch(error => console.log(error))
+    }
     return (
         <div className='dashb-bcolor'>
             <div>
@@ -20,7 +40,7 @@ const Dashboard = () => {
                     <h1>CONTACT</h1>
                 </div>
                 <div>
-                    <img src="./profile_placeholder.png" alt="" />
+                    <img src="./profile_placeholder.png" alt="web icon" />
                 </div>
             </div>
 
@@ -63,10 +83,31 @@ const Dashboard = () => {
                     <h2></h2>
                     <h2 className="text2">Lowest salary job found in Los Angeles: $43,680 </h2>
                 </div>
-                <table>
-                    
-                </table>
-
+                <div>
+                    <table>
+                        <thead>
+                            <th>Author</th>
+                            <th>Action available</th>
+                        </thead>
+                        <tbody>
+                            {
+                                recipes.map((recipe) => {
+                                return (
+                                <> 
+                                <tr>
+                                    <td><Link to={"/recipes/"+recipe._id}>{recipe.name}</Link></td>
+                                    <td>
+                                        <Link to={"/recipes/edit/"+recipe._id}>EDIT</Link>
+                                        <button onClick={() => deleteHandler(recipe._id)}>DELETE</button>
+                                    </td>
+                                </tr>
+                                </>
+                                    )
+                                })
+                            }
+                        </tbody>
+                    </table>
+                </div>
 
 
             </div>
