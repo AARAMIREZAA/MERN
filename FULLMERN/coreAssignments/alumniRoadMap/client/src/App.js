@@ -16,7 +16,6 @@ function App() {
       <Routes>
         <Route path="/" element={<Auth />} />
         <Route path="/dashboard" element={<Dashboard/>} />
-        {/* <Route path="/" element={<RegLog/>} /> */}
         <Route path="/product" element={<Main />} />
         <Route path="/:product_id" element={<DetailProduct />} />
         <Route path="/:product_id/edit" element={<EditProduct />} />
